@@ -142,7 +142,7 @@ int main() {
     Spheroid venus("../textures/2k_venus_atmosphere.jpg",5.f, 90.f, glm::vec3(0.34f), 2.f, glm::vec3(0.0f, 0.8f, 0.2f), 1.3f);
     Spheroid earth("../textures/2k_earth_daymap_flipped.jpg",7.f, 90.f, glm::vec3(0.5f), 2.f, glm::vec3(0.0f, 0.8f, 0.2f), 1.f);
     //Spheroid earth_clouds("../textures/2k_earth_clouds.jpg",7.f, 90.f, glm::vec3(0.505f), 2.f, glm::vec3(0.0f, 0.8f, 0.2f), 1.f); //glm::vec3(0.0f, 0.8f, 0.2f)
-    Spheroid moon("../textures/2k_moon.jpg", 2.f, 80.f, glm::vec3(0.2f), 4.f, glm::vec3(0.0f, 1.3f, -0.3f), 1.f);
+    Spheroid moon("../textures/2k_moon.jpg", 2.f, 80.f, glm::vec3(0.2f), 4.f, glm::vec3(0.0f, 1.3f, -0.3f), 3.f);
     Spheroid mars("../textures/2k_mars.jpg", 10.f, 80.f, glm::vec3(0.4f), 4.f, glm::vec3(0.0f, 1.3f, -0.3f), 0.9f);
 
     Spheroid jupiter("../textures/2k_jupiter.jpg", 16.f, 80.f, glm::vec3(1.2f), 4.f, glm::vec3(0.0f, 1.3f, -0.3f), 0.7f);
