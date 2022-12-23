@@ -2,6 +2,8 @@
 
 ### Overview
 A very basic opengl orrery which includes each major planet and the moon in orbit aroud earth
+<img width="694" alt="Screenshot 2022-12-22 at 16 30 16" src="https://user-images.githubusercontent.com/57464533/209244942-53be3451-0ef7-4832-8b5a-631032356cc7.png">
+![2022-12-22 17-07-28-2](https://user-images.githubusercontent.com/57464533/209247346-18079ad8-f0c4-42b7-bdbc-07063f4e473c.GIF)
 
 
 
