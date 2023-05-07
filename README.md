@@ -1,7 +1,7 @@
 ## C++ & Opengl Orrery
 
 ### Overview
-A very basic opengl orrery which includes each major planet and the moon in orbit around earth
+A opengl orrery which includes each major planet and the moon in orbit around earth
 
 Currently, you are able to create and edit the axial inclination, orbital inclination, orbital speed, rotation speed, distance from parent, and the orbital parent as a well as a few other settings for each spheriod.
 
