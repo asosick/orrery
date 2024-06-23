@@ -171,7 +171,7 @@ int main() {
     earth.children.push_back(&moon);
 
 	// RENDER LOOP
-	while (!window.shouldClose()) {
+    while (!window.shouldClose()) {
         handleDeltaTime();
         glfwPollEvents();
         buildImGui();
