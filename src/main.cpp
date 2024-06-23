@@ -185,11 +185,11 @@ int main() {
 
         shader.use();
         if(!pause)
-        glfwtime = glfwtime + dTime * animationSpeed;
+            glfwtime = glfwtime + dTime * animationSpeed;
 
         a4->viewPipeline(shader, earth.position);
         for(const auto p : planitoids)
-        p->render(shader);
+            p->render(shader);
 
         noLightShader.use();
         a4->viewPipeline(noLightShader, venus.position);
