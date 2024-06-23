@@ -108,16 +108,16 @@ private:
 void handleDeltaTime();
 
 int main() {
-	Log::debug("Starting main");
-	// WINDOW
-	glfwInit();
-	Window window(800, 800, "Orrery");
+    Log::debug("Starting main");
+    // WINDOW
+    glfwInit();
+    Window window(800, 800, "Orrery");
 
-	GLDebug::enable();
+    GLDebug::enable();
 
-	// CALLBACKS
-	auto a4 = std::make_shared<GLFWCallbacks>();
-	window.setCallbacks(a4);
+    // CALLBACKS
+    auto a4 = std::make_shared<GLFWCallbacks>();
+    window.setCallbacks(a4);
 
 
     //Imgui
@@ -170,7 +170,7 @@ int main() {
 
     earth.children.push_back(&moon);
 
-	// RENDER LOOP
+    // RENDER LOOP
     while (!window.shouldClose()) {
         handleDeltaTime();
         glfwPollEvents();
@@ -178,18 +178,18 @@ int main() {
 
 
         glEnable(GL_LINE_SMOOTH);
-		glEnable(GL_FRAMEBUFFER_SRGB);
-		glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
-		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-		glEnable(GL_DEPTH_TEST);
+        glEnable(GL_FRAMEBUFFER_SRGB);
+        glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+        glEnable(GL_DEPTH_TEST);
 
-		shader.use();
+        shader.use();
         if(!pause)
-            glfwtime = glfwtime + dTime * animationSpeed;
+        glfwtime = glfwtime + dTime * animationSpeed;
 
-		a4->viewPipeline(shader, earth.position);
+        a4->viewPipeline(shader, earth.position);
         for(const auto p : planitoids)
-            p->render(shader);
+        p->render(shader);
 
         noLightShader.use();
         a4->viewPipeline(noLightShader, venus.position);
@@ -200,15 +200,15 @@ int main() {
         glDisable(GL_FRAMEBUFFER_SRGB); // disable sRGB for things like imgui
         ImGui::Render();
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
-		window.swapBuffers();
-	}
+        window.swapBuffers();
+    }
 
     ImGui_ImplOpenGL3_Shutdown();
     ImGui_ImplGlfw_Shutdown();
     ImGui::DestroyContext();
 
-	glfwTerminate();
-	return 0;
+    glfwTerminate();
+    return 0;
 }
 
 
